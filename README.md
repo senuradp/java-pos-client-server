@@ -1,4 +1,4 @@
-# ![My Skills](https://skills.thijs.gg/icons?i=java&theme=light)   JAVA Client Server Point Of Sale (POS) System 
+# ![My Skills](https://skills.thijs.gg/icons?i=java&theme=light)   Client Server Point Of Sale (POS) System with JAVA Swing
 
 By : S K Senura Deshan Perera (CB008868) - Final Year Undergraduate at APIIT Sri Lanka
 
