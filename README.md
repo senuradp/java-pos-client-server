@@ -44,7 +44,9 @@ CREATE TABLE `product` (
   `price` bigint NOT NULL,
   PRIMARY KEY (`product_code`)
 );
+```
 
+```
 CREATE TABLE `batch` (
   `batch_code` varchar(10) NOT NULL,
   `purchase_date` date NOT NULL,
@@ -57,7 +59,9 @@ CREATE TABLE `batch` (
   KEY `batch_to_product` (`product_code`),
   CONSTRAINT `batch_to_product` FOREIGN KEY (`product_code`) REFERENCES `product` (`product_code`)
 ) ;
+```
 
+```
 CREATE TABLE `bill_header` (
   `bill_serial_number` varchar(20) NOT NULL,
   `payment_type` varchar(20) NOT NULL,
@@ -68,7 +72,9 @@ CREATE TABLE `bill_header` (
   `balance` bigint NOT NULL,
   PRIMARY KEY (`bill_serial_number`)
 );
+```
 
+```
 CREATE TABLE `bill_detail` (
   `bill_serial_number` varchar(20) NOT NULL,
   `product_code` varchar(20) NOT NULL,
@@ -77,7 +83,9 @@ CREATE TABLE `bill_detail` (
   `product_price` bigint NOT NULL,
   `total_item_price` bigint NOT NULL
 );
+```
 
+```
 CREATE TABLE `shelf` (
   `shelf_code` varchar(10) NOT NULL,
   `product_code` varchar(10) DEFAULT NULL,
@@ -87,14 +95,15 @@ CREATE TABLE `shelf` (
   KEY `shelf_to_product` (`product_code`),
   CONSTRAINT `shelf_to_product` FOREIGN KEY (`product_code`) REFERENCES `product` (`product_code`)
 );
+```
 
+```
 CREATE TABLE `user` (
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `role` varchar(255) NOT NULL,
   PRIMARY KEY (`username`)
 );
-
 ```
 
 ## Contributing
