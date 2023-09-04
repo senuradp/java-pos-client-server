@@ -46,7 +46,7 @@ CREATE TABLE `product` (
 );
 ```
 
-```
+```bash
 CREATE TABLE `batch` (
   `batch_code` varchar(10) NOT NULL,
   `purchase_date` date NOT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE `batch` (
 ) ;
 ```
 
-```
+```bash
 CREATE TABLE `bill_header` (
   `bill_serial_number` varchar(20) NOT NULL,
   `payment_type` varchar(20) NOT NULL,
@@ -74,7 +74,7 @@ CREATE TABLE `bill_header` (
 );
 ```
 
-```
+```bash
 CREATE TABLE `bill_detail` (
   `bill_serial_number` varchar(20) NOT NULL,
   `product_code` varchar(20) NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE `bill_detail` (
 );
 ```
 
-```
+```bash
 CREATE TABLE `shelf` (
   `shelf_code` varchar(10) NOT NULL,
   `product_code` varchar(10) DEFAULT NULL,
@@ -97,7 +97,7 @@ CREATE TABLE `shelf` (
 );
 ```
 
-```
+```bash
 CREATE TABLE `user` (
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
